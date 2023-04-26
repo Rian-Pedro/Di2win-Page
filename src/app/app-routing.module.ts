@@ -6,10 +6,11 @@ import { FidcComponent } from './pages/fidc/fidc.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: '/fidc', component: FidcComponent }
+  { path: 'fidc', component: FidcComponent }
 ];
 
 @NgModule({
+  declarations: [],
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })

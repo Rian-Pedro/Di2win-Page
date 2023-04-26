@@ -1,0 +1,19 @@
+<header>
+  <a routerLink="">
+    <img src="../assets/logo-di2win.svg" alt="Extrai Dados">
+  </a>
+
+  <img src="../assets/dots.svg" alt="menu" (click)="dropDownMenu()">
+</header>
+<div class="dropdown invisible" (mouseleave)="closeDropDown()">
+  <div class="esquerda">
+    <app-btn-nav title="soluções" class="teste"></app-btn-nav>
+    <app-btn-nav title="produtos" class="teste"></app-btn-nav>
+    <app-btn-nav title="duvidas frequentes" class="teste"></app-btn-nav>
+    <app-btn-nav title="entrar" class="teste"></app-btn-nav>
+  </div>
+  <div class="direita">
+    <div *ngIf="solucoes"></div>
+  </div>
+</div>
+<router-outlet></router-outlet>
