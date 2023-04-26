@@ -1,0 +1,17 @@
+div.container {
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid #FF1D92;
+  text-align: center;
+  padding: 1.2rem 0;
+  font-size: .8em;
+}
+
+div.container p:hover {
+  width: 80%;
+  padding: 2px 0;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}

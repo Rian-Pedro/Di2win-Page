@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FidcComponent } from './pages/fidc/fidc.component';
+import { BtnNavComponent } from './components/btn-nav/btn-nav.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    FidcComponent
+    FidcComponent,
+    BtnNavComponent,
   ],
   imports: [
     BrowserModule,
