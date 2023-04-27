@@ -1,0 +1,78 @@
+div.container {
+  display: flex;
+  gap: 1rem;
+  padding: .7rem 2rem;
+  background-color: #ffffff;
+  color: #FF1D92;
+  cursor: pointer;
+  user-select: none;
+}
+
+div.container img.arrow {
+  transition: transform .5s;
+}
+
+@keyframes click-arrow {
+  from {
+    transform: rotateZ(90deg);
+  }
+
+  to {
+    transform: rotateZ(180deg);
+  }
+}
+
+@keyframes open-drop {
+  from {
+    display: none;
+    height: 0px;
+    transform-origin: 100% 0%;
+  }
+
+  to {
+    display: initial;
+    height: max-content;
+    transform-origin: 100% 0%;
+  }
+}
+
+@keyframes close-drop {
+  from {
+    display: initial;
+    height: max-content;
+    transform-origin: 100% 0%;
+  }
+
+  to {
+    display: none;
+    height: 0px;
+    transform-origin: 100% 0%;
+  }
+}
+
+.drop {
+  display: none;
+  height: 0px;
+  width: 100%;
+}
+
+.drop p {
+  padding: .8rem;
+  transition: background .3s;
+}
+
+.drop p:hover {
+  background-color: #C8C8C8;
+  border-bottom: 1px solid #FF1D92;
+}
+
+.visible {
+  display: initial;
+  animation: open-drop .2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.invisible {
+  display: none;
+  animation: close-drop .2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+

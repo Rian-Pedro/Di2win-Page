@@ -1,17 +1,20 @@
 div.container {
-  height: 35px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border-bottom: 1px solid #FF1D92;
+  font-size: .8rem;
+  font-weight: 300;
   text-align: center;
-  padding: 1.2rem 0;
-  font-size: .8em;
+}
+
+div.container p {
+  text-align: center;
+  margin: .5rem 0;
+  display: inline-block;
+  padding: 5px 2px;
+  cursor: pointer;
+  user-select: none;
 }
 
 div.container p:hover {
-  width: 80%;
-  padding: 2px 0;
   background-color: #f0f0f0;
   border-radius: 5px;
 }

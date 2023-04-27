@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Menu } from './menu';
 
 @Component({
   selector: 'app-root',
@@ -8,18 +9,43 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'extrai-dados';
 
-  solucoes: Boolean = false;
+  show: Boolean = true;
+
+  menu: Array<Menu> = [
+    { name: 'soluções', show: false },
+    { name: 'produtos', show: false }
+  ];
 
   dropDownMenu() {
-    let menu: HTMLDivElement = document.querySelector(".dropdown") as HTMLDivElement;
-    menu.classList.remove('invisible');
-    menu.classList.add('visible');
+    if(this.show) {
+      let menu: HTMLDivElement = document.querySelector(".dropdown") as HTMLDivElement;
+      if(menu.classList.contains('close')){
+        menu.classList.remove('close');
+      } else {
+        menu.classList.remove('invisible');
+      }
+      menu.classList.add('visible');
+      this.show = !this.show;
+    } else {
+      this.closeDropDown();
+    }
+  }
+
+  teste(teste: any) {
+    for(let opt of this.menu) {
+      if(opt.name == teste.name){
+        opt.show = true;
+        let tes: HTMLElement = document.querySelector('.tes') as HTMLElement;
+        tes.style.display = 'inline';
+      }
+    }
   }
 
   closeDropDown() {
     let menu: HTMLDivElement = document.querySelector(".dropdown") as HTMLDivElement;
     menu.classList.remove('visible');
     menu.classList.add('invisible');
+    this.show = !this.show;
   }
 
 }

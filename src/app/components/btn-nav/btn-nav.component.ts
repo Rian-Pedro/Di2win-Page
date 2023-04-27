@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-btn-nav',
@@ -6,5 +6,12 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./btn-nav.component.css']
 })
 export class BtnNavComponent {
+
   @Input() title: string = '';
+
+  @Output() changeOptions: EventEmitter<{name: string}> = new EventEmitter();
+
+  handleOpt() {
+    this.changeOptions.emit({name: this.title});
+  }
 }
