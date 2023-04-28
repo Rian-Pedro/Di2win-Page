@@ -14,13 +14,11 @@ div.container img.arrow {
 
 @keyframes open-drop {
   from {
-    /* height: 0px; */
     transform: scaleY(0);
     transform-origin: 100% 0%;
   }
 
   to {
-    /* height: calc(max-content); */
     transform: scaleY(1);
     transform-origin: 100% 0%;
   }
@@ -28,13 +26,11 @@ div.container img.arrow {
 
 @keyframes close-drop {
   from {
-    /* height: max-content; */
     transform: scaleY(1);
     transform-origin: 100% 0%;
   }
 
   to {
-    /* height: 0px; */
     transform: scaleY(0);
     transform-origin: 100% 0%;
   }
@@ -60,7 +56,6 @@ div.container img.arrow {
 
 .drop p:hover {
   background-color: #C8C8C8;
-  /* border-bottom: 1px solid #FF1D92; */
   border-left: 25px solid #FF1D92;
   padding-left: .5rem;
 }
