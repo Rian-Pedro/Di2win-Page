@@ -24,13 +24,13 @@ div.container img.arrow {
 
 @keyframes open-drop {
   from {
-    height: 0px;
+    /* height: 0px; */
     transform: scaleY(0);
     transform-origin: 100% 0%;
   }
 
   to {
-    height: max-content;
+    /* height: calc(max-content); */
     transform: scaleY(1);
     transform-origin: 100% 0%;
   }
@@ -38,13 +38,13 @@ div.container img.arrow {
 
 @keyframes close-drop {
   from {
-    height: max-content;
+    /* height: max-content; */
     transform: scaleY(1);
     transform-origin: 100% 0%;
   }
 
   to {
-    height: 0px;
+    /* height: 0px; */
     transform: scaleY(0);
     transform-origin: 100% 0%;
   }
@@ -52,6 +52,8 @@ div.container img.arrow {
 
 .drop {
   width: 100%;
+  transform: scaleY(0);
+  transform-origin: 100% 0%;
 }
 
 .drop p {
@@ -79,11 +81,11 @@ div.container img.arrow {
 
 .visible {
   height: max-content;
-  animation: open-drop .15s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: open-drop .1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 .invisible {
   height: 0px;
-  animation: close-drop .05s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: close-drop .1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
