@@ -9,17 +9,7 @@ div.container {
 }
 
 div.container img.arrow {
-  transition: transform .5s;
-}
-
-@keyframes click-arrow {
-  from {
-    transform: rotateZ(90deg);
-  }
-
-  to {
-    transform: rotateZ(180deg);
-  }
+  transition: transform .1s;
 }
 
 @keyframes open-drop {
