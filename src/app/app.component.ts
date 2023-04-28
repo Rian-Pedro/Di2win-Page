@@ -31,20 +31,19 @@ export class AppComponent {
     }
   }
 
-  teste(teste: any) {
+  teste(option: any) {
     for(let opt of this.menu) {
-      if(opt.name == teste.name){
+      if(opt.name == option.name){
         opt.show = true;
-        let tes: HTMLElement = document.querySelector('.tes') as HTMLElement;
-        tes.style.display = 'inline';
+        let div: HTMLElement = document.querySelector('.hidden') as HTMLElement;
+        div.style.display = 'inline';
       }
     }
   }
 
   closeDropDown() {
     let menu: HTMLDivElement = document.querySelector(".dropdown") as HTMLDivElement;
-    menu.classList.remove('visible');
-    menu.classList.add('invisible');
+    menu.classList.replace('visible', 'invisible');
     this.show = !this.show;
   }
 

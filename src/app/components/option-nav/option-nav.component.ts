@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { option } from 'src/app/option';
 
 @Component({
   selector: 'app-option-nav',
@@ -10,6 +11,7 @@ export class OptionNavComponent {
 
   @Input() name: string = '';
   @Input() title: string = '';
+  @Input() options: Array<option> = [];
 
   ngOnInit() {
   }
@@ -33,7 +35,13 @@ export class OptionNavComponent {
           this.closeNav(i.drop, i.arrow);
         }
       }
-      option.classList.replace('invisible', 'visible');
+
+      if(option.classList.contains('close')) {
+        option.classList.replace('close', 'visible');
+      } else {
+        option.classList.replace('invisible', 'visible');
+      }
+
       arrow.style.transform = 'rotate(90deg)';
     } else {
       this.closeNav(option, arrow);

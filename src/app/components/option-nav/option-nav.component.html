@@ -2,8 +2,12 @@
   <img src="../../../assets/arrow.svg" width="6px" [ngClass]="['arrow-' + name, 'arrow']">
   <p>{{title | uppercase}}</p>
 </div>
-<div [ngClass]="['drop', name, 'invisible']">
-  <p>option</p>
-  <p>option</p>
-  <p>option</p>
+<div [ngClass]="['drop', name, 'close']">
+  <div *ngFor="let opt of options">
+    <p>
+      <a [routerLink]="opt.href">
+        {{opt.name}}
+      </a> 
+    </p>
+  </div>
 </div>

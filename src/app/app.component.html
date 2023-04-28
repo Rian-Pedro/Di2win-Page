@@ -14,12 +14,15 @@
   <div class="direita">
     <div class="hidden">
       <app-option-nav
-        title="teste"
-        name="option1"
-        class="testando"
+        title="financeiro"
+        name="finan"
+        [options]="[{ name: 'CRI', href: '/' }, { name: 'FIDC', href: '/fidc' }]"
       ></app-option-nav>
-      <app-option-nav name="option2" class="testando"></app-option-nav>
-      <app-option-nav name="option3" class="testando"></app-option-nav>
+      <app-option-nav
+        title="financeiro"
+        name="teste"
+        [options]="[{ name: 'CRI', href: '/' }, { name: 'FIDC', href: '/fidc' }]"
+      ></app-option-nav>
     </div>
   </div>
 </div>
