@@ -1,20 +1,14 @@
 import { Component } from '@angular/core';
-import { Menu } from './menu';
+import { Menu } from 'src/app/menu';
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-nav-smartphone',
+  templateUrl: './nav-smartphone.component.html',
+  styleUrls: ['./nav-smartphone.component.css']
 })
-export class AppComponent {
-  title = 'extrai-dados';
+export class NavComponent {
 
   show: Boolean = true;
-
-  menu: Array<Menu> = [
-    { name: 'soluções', show: false },
-    { name: 'produtos', show: false }
-  ];
 
   dropDownMenu() {
     if(this.show) {
@@ -32,13 +26,15 @@ export class AppComponent {
   }
 
   teste(option: any) {
-    for(let opt of this.menu) {
-      if(opt.name == option.name){
-        opt.show = true;
-        let div: HTMLElement = document.querySelector('.hidden') as HTMLElement;
-        div.style.display = 'inline';
+    let optionsNav: NodeListOf<HTMLElement> = document.querySelectorAll('.option-nav') as NodeListOf<HTMLElement>;
+    for(let opt of Array.from(optionsNav)) {
+      if(opt.classList.contains('visible')) {
+        opt.style.display = 'none';
       }
     }
+    let div: HTMLElement = document.querySelector(`.${option.name.replace(/[^a-zA-Z0-9]/g, '')}`) as HTMLElement;
+    div.classList.replace('hidden', 'visible');
+    div.style.display = 'inline';
   }
 
   closeDropDown() {

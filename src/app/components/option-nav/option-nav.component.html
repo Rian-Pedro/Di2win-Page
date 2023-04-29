@@ -1,0 +1,20 @@
+<div class="container" (click)="openNav()" *ngIf="options.length > 0; else noNav">
+  <img src="../../../assets/arrow.svg" width="6px" [ngClass]="['arrow-' + name, 'arrow']">
+  <p>{{title | uppercase}}</p>
+</div>
+
+<ng-template #noNav>
+  <div class="container noNav">
+    <p>{{title | uppercase}}</p>
+  </div>
+</ng-template>
+
+<div [ngClass]="['drop', name, 'close']">
+  <div *ngFor="let opt of options">
+    <p>
+      <a [routerLink]="opt.href">
+        {{opt.name}}
+      </a>
+    </p>
+  </div>
+</div>

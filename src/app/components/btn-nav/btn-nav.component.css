@@ -1,0 +1,26 @@
+div.container {
+  width: 100%;
+  border-bottom: 1px solid #FF1D92;
+  font-size: .8rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+div.container p {
+  text-align: center;
+  margin: .5rem 0;
+  display: inline-block;
+  padding: 5px 2px;
+  cursor: pointer;
+  user-select: none;
+}
+
+div.container p:hover {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+div.container p.enableOpt {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
