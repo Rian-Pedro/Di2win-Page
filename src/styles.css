@@ -1,3 +1,15 @@
+
+/* Link da fonte Montserrat. Padrao dado no grupo */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+:root{
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #0d0030;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #FFFF;
+}
+
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
 
 * {

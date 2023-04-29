@@ -8,6 +8,7 @@ import { FidcComponent } from './pages/fidc/fidc.component';
 import { BtnNavComponent } from './components/btn-nav/btn-nav.component';
 import { OptionNavComponent } from './components/option-nav/option-nav.component';
 import { NavComponent } from './components/navbar/nav/nav-smartphone.component';
+import { FooterComponent } from './components/footer/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { NavComponent } from './components/navbar/nav/nav-smartphone.component';
     BtnNavComponent,
     OptionNavComponent,
     NavComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
