@@ -11,7 +11,16 @@ export class BtnNavComponent {
 
   @Output() changeOptions: EventEmitter<{name: string}> = new EventEmitter();
 
-  handleOpt() {
+  handleOpt(teste: MouseEvent) {
+    let allP: NodeListOf<HTMLElement> = document.querySelectorAll('.titleOpt') as NodeListOf<HTMLElement>;
+    for(let i of Array.from(allP)) {
+      i.classList.remove('enableOpt');
+
+      if(teste.target == i) {
+        i.classList.add('enableOpt');
+      }
+    }
+
     this.changeOptions.emit({name: this.title});
   }
 }

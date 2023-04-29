@@ -1,11 +1,18 @@
 div.container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
-  padding: .7rem 2rem;
+  padding: .7rem 0;
   background-color: #ffffff;
   color: #FF1D92;
   cursor: pointer;
   user-select: none;
+}
+
+div.container.noNav {
+  cursor: auto;
+  border-bottom: 1px solid #FF1D92;
 }
 
 div.container img.arrow {

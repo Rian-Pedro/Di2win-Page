@@ -1,29 +1,10 @@
 <header>
   <a routerLink="">
-    <img src="../assets/logo-di2win.svg" alt="Extrai Dados">
+    <img src="../assets/logo-di2win.svg" alt="Extrai Dados" width="150px">
   </a>
-  <img src="../assets/dots.svg" alt="menu" (click)="dropDownMenu()">
+  <img src="../assets/dots.svg" alt="menu" (click)="dropDownMenu()" class="smartphone">
 </header>
-<div class="dropdown close" (mouseleave)="closeDropDown()">
-  <div class="esquerda">
-    <app-btn-nav title="soluções" class="title-nav" (changeOptions)="teste($event)"></app-btn-nav>
-    <app-btn-nav title="produtos" class="title-nav"></app-btn-nav>
-    <app-btn-nav title="duvidas frequentes" class="title-nav"></app-btn-nav>
-    <app-btn-nav title="entrar" class="title-nav"></app-btn-nav>
-  </div>
-  <div class="direita">
-    <div class="hidden">
-      <app-option-nav
-        title="financeiro"
-        name="finan"
-        [options]="[{ name: 'CRI', href: '/' }, { name: 'FIDC', href: '/fidc' }]"
-      ></app-option-nav>
-      <app-option-nav
-        title="financeiro"
-        name="teste"
-        [options]="[{ name: 'CRI', href: '/' }, { name: 'FIDC', href: '/fidc' }]"
-      ></app-option-nav>
-    </div>
-  </div>
-</div>
+
+<app-nav-smartphone class="smartphone"></app-nav-smartphone>
+
 <router-outlet></router-outlet>

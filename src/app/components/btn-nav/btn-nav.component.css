@@ -1,4 +1,5 @@
 div.container {
+  width: 100%;
   border-bottom: 1px solid #FF1D92;
   font-size: .8rem;
   font-weight: 300;
@@ -15,6 +16,11 @@ div.container p {
 }
 
 div.container p:hover {
+  background-color: #f0f0f0;
+  border-radius: 5px;
+}
+
+div.container p.enableOpt {
   background-color: #f0f0f0;
   border-radius: 5px;
 }
