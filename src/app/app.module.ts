@@ -9,6 +9,7 @@ import { BtnNavComponent } from './components/btn-nav/btn-nav.component';
 import { OptionNavComponent } from './components/option-nav/option-nav.component';
 import { NavComponent } from './components/navbar/nav/nav-smartphone.component';
 import { FooterComponent } from './components/footer/footer/footer.component';
+import { NavDesktopComponent } from './components/navbar/nav-desktop/nav-desktop.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { FooterComponent } from './components/footer/footer/footer.component';
     OptionNavComponent,
     NavComponent,
     FooterComponent,
+    NavDesktopComponent,
   ],
   imports: [
     BrowserModule,

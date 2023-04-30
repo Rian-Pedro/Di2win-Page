@@ -3,12 +3,24 @@ header {
   padding: 1.8rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   box-shadow: 0 0px 15px #c2c2c2;
   z-index: 10;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 440px) {
   .smartphone {
+    display: none;
+  }
+
+  header {
+    padding: 1.8rem 5rem;
+  }
+
+}
+
+@media (max-width: 439px) {
+  .desktop {
     display: none;
   }
 }
