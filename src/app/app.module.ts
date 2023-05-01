@@ -10,6 +10,7 @@ import { OptionNavComponent } from './components/option-nav/option-nav.component
 import { NavComponent } from './components/navbar/nav/nav-smartphone.component';
 import { FooterComponent } from './components/footer/footer/footer.component';
 import { NavDesktopComponent } from './components/navbar/nav-desktop/nav-desktop.component';
+import { BtnContatoComponent } from './components/btn-contato/btn-contato.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { NavDesktopComponent } from './components/navbar/nav-desktop/nav-desktop
     NavComponent,
     FooterComponent,
     NavDesktopComponent,
+    BtnContatoComponent,
   ],
   imports: [
     BrowserModule,

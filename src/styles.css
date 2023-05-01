@@ -16,3 +16,14 @@
   font-family: 'Montserrat', sans-serif;
   list-style: none;
 }
+
+main {
+  padding: 2.5rem 0;
+  gap: 2.5rem;
+}
+
+.D-flexCollumn {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

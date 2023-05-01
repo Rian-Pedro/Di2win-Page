@@ -1,4 +1,5 @@
 footer {
+  margin-top: 5rem;
   text-align: center;
   width: 100%;
   color: var(--color-neutral-40);
@@ -9,6 +10,7 @@ footer {
 }
 
 #footer_content {
+  height: min-content;
   background-color: var(--color-neutral-10);
 }
 

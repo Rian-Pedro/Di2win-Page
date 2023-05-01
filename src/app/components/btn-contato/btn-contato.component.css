@@ -1,0 +1,59 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 447px;
+  height: 211px;
+  position: relative;
+}
+
+.card-content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  padding: 0 20px;
+}
+
+.card-content h2 {
+  font-size: 23px;
+  font-weight: normal;
+  margin: 0;
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.card-content .highlight {
+  color: #FF1D92;
+}
+
+.card-content button {
+  background-color: #FF1D92;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+  padding: 12px 24px;
+  margin-top: 30px;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+
+.card-content button:hover {
+  opacity: 0.8;
+}
+
+.card {
+  background-image: url('../../../assets/fundo.svg');
+  background-size:447px 211px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+

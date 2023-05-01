@@ -1,11 +1,14 @@
 header {
   background-color: #fff;
   padding: 1.8rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   box-shadow: 0 0px 15px #c2c2c2;
   z-index: 10;
+}
+
+header img.smartphone {
+  transform: translateY(25%);
+  position: absolute;
+  right: 1.8rem;
 }
 
 @media (min-width: 440px) {
@@ -15,11 +18,18 @@ header {
 
   header {
     padding: 1.8rem 5rem;
+    display: flex;
+    justify-content: space-between;
   }
 
 }
 
 @media (max-width: 439px) {
+
+  header {
+    position: relative;
+  }
+
   .desktop {
     display: none;
   }
