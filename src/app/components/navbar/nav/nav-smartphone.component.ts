@@ -19,7 +19,7 @@ export class NavComponent {
         menu.classList.remove('invisible');
       }
       menu.classList.add('visible');
-      this.show = !this.show;
+      this.show = false;
     } else {
       this.closeDropDown();
     }
@@ -40,7 +40,7 @@ export class NavComponent {
   closeDropDown() {
     let menu: HTMLDivElement = document.querySelector(".dropdown") as HTMLDivElement;
     menu.classList.replace('visible', 'invisible');
-    this.show = !this.show;
+    this.show = true;
   }
 
 }

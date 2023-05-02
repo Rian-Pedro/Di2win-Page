@@ -17,15 +17,14 @@ export class AppComponent {
   ];
 
   dropDownMenu() {
-    if(this.show) {
-      let menu: HTMLDivElement = document.querySelector(".dropdown") as HTMLDivElement;
+    let menu: HTMLDivElement = document.querySelector(".dropdown") as HTMLDivElement;
+    if(menu.classList.contains('invisible') || menu.classList.contains('close')) {
       if(menu.classList.contains('close')){
         menu.classList.remove('close');
       } else {
         menu.classList.remove('invisible');
       }
       menu.classList.add('visible');
-      this.show = !this.show;
     } else {
       this.closeDropDown();
     }
