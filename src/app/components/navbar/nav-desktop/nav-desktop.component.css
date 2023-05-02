@@ -19,3 +19,18 @@ img {
   margin-left: 5px;
   transform: rotateZ(90deg);
 }
+
+div.dropdown {
+  background-color: aqua;
+  position: absolute;
+  width: 50%;
+  transform: translateY(80%);
+}
+
+.close {
+  display: none;
+}
+
+.hidden {
+  display: none;
+}

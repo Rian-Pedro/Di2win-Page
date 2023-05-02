@@ -41,30 +41,6 @@ section.esquerda {
   display: none;
 }
 
-@keyframes open-nav {
-  from {
-    transform: scaleY(0);
-    transform-origin: 100% 0%;
-  }
-
-  to {
-    transform: scale(1);
-    transform-origin: 100% 0%;
-  }
-}
-
-@keyframes close-nav {
-  from {
-    transform: scaleY(1);
-    transform-origin: 100% 0%;
-  }
-
-  to {
-    transform: scaleY(0);
-    transform-origin: 100% 0%;
-  }
-}
-
 .close {
   display: none;
 }

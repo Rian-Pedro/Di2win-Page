@@ -1,4 +1,4 @@
-<nav class="dropdown close" (mouseleave)="closeDropDown()">
+<nav class="dropdown close" (mouseleave)="closeDropDown($event.target)">
 
   <section class="esquerda">
 
@@ -8,7 +8,7 @@
       (changeOptions)="teste($event)">
     </app-btn-nav>
 
-    <app-btn-nav 
+    <app-btn-nav
       title="produtos"
       class="title-nav"
       (changeOptions)="teste($event)">

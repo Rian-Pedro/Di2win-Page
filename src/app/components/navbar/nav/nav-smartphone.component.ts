@@ -10,18 +10,32 @@ export class NavComponent {
 
   show: Boolean = true;
 
+  ngOnInit() {
+    let menu: HTMLDivElement = document.querySelector(".dropdown") as HTMLDivElement;
+    document.addEventListener('click', (e) => {
+
+    if(e.target !== menu &&
+       e.target !== document.querySelector(".dots") &&
+       !menu.contains(e.target as HTMLElement)) {
+
+      this.closeDropDown(menu);
+
+    }
+
+    })
+  }
+
   dropDownMenu() {
-    if(this.show) {
-      let menu: HTMLDivElement = document.querySelector(".dropdown") as HTMLDivElement;
+    let menu: HTMLDivElement = document.querySelector(".dropdown") as HTMLDivElement;
+    if(menu.classList.contains('close') || menu.classList.contains('invisible')) {
       if(menu.classList.contains('close')){
         menu.classList.remove('close');
       } else {
         menu.classList.remove('invisible');
       }
       menu.classList.add('visible');
-      this.show = false;
     } else {
-      this.closeDropDown();
+      this.closeDropDown(menu);
     }
   }
 
@@ -37,8 +51,7 @@ export class NavComponent {
     div.style.display = 'inline';
   }
 
-  closeDropDown() {
-    let menu: HTMLDivElement = document.querySelector(".dropdown") as HTMLDivElement;
+  closeDropDown(menu: any) {
     menu.classList.replace('visible', 'invisible');
     this.show = true;
   }
