@@ -1,3 +1,7 @@
+main {
+  gap: 5rem
+}
+
 main div.msg {
   width: 90%;
   padding: 1rem;
@@ -5,11 +9,15 @@ main div.msg {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 main div.msg div.msgContent h2 {
   font-size: 1.5rem;
   color: var(--pink-Di2win);
   margin-bottom: 1rem;
+}
+
+main div.msg img {
+  width: 100%;
 }
