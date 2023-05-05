@@ -1,0 +1,61 @@
+.container {
+  width: 500px;
+  height: 300px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.carrossel {
+  position: absolute;
+  width: max-content;
+  display: flex;
+  left: 0;
+  transition: left ease 1s;
+  z-index: 0;
+}
+
+.container-btn-carrossel {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.container-btn-carrossel button {
+  padding: .3rem;
+  margin-left: 5px;
+  border-radius: 100px;
+  border: 0;
+}
+
+.btn-disable {
+  background-color: #fff;
+}
+
+.btn-active {
+  background-color: var(--pink-Di2win);
+}
+
+.caixa {
+  width: 500px;
+  height: 300px;
+}
+
+.caixa1 {
+  background-color: aqua;
+}
+
+.caixa2 {
+  background-color: rebeccapurple;
+}
+
+.caixa3 {
+  background-color: brown;
+}

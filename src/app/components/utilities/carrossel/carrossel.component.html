@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="carrossel">
+    <div *ngFor="let tela of telas" class="caixa" [ngStyle]="{'background': tela.color}"></div>
+  </div>
+  <div class="container-btn-carrossel">
+    <button *ngFor="let btn of telas" (click)="teste(btn, $event)" class="btn-carrossel"></button>
+  </div>
+</div>
+
+<div class="btn-active">es</div>

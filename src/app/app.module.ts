@@ -10,7 +10,8 @@ import { OptionNavComponent } from './components/option-nav/option-nav.component
 import { NavComponent } from './components/navbar/nav/nav-smartphone.component';
 import { FooterComponent } from './components/footer/footer/footer.component';
 import { NavDesktopComponent } from './components/navbar/nav-desktop/nav-desktop.component';
-import { BtnContatoComponent } from './components/btn-contato/btn-contato.component';
+import { BtnContatoComponent } from './components/utilities/btn-contato/btn-contato.component';
+import { CarrosselComponent } from './components/utilities/carrossel/carrossel.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { BtnContatoComponent } from './components/btn-contato/btn-contato.compon
     FooterComponent,
     NavDesktopComponent,
     BtnContatoComponent,
+    CarrosselComponent,
   ],
   imports: [
     BrowserModule,

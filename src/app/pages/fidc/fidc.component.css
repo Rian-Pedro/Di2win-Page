@@ -21,3 +21,18 @@ main div.msg div.msgContent h2 {
 main div.msg img {
   width: 100%;
 }
+
+@media (min-width: 672px) {
+  main div.msg {
+    width: 60%;
+    gap: 2rem;
+  }
+
+  main div.msg div.msgContent {
+    width: 80%;
+  }
+
+  main div.msg img {
+    width: 80%;
+  }
+}

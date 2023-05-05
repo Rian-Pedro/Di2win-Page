@@ -14,14 +14,11 @@ export class NavComponent {
     let menu: HTMLDivElement = document.querySelector(".dropdown") as HTMLDivElement;
     document.addEventListener('click', (e) => {
 
-    if(e.target !== menu &&
-       e.target !== document.querySelector(".dots") &&
-       !menu.contains(e.target as HTMLElement)) {
-
-      this.closeDropDown(menu);
-
-    }
-
+      if(e.target !== menu &&
+        e.target !== document.querySelector(".dots") &&
+        !menu.contains(e.target as HTMLElement)) {
+        this.closeDropDown(menu);
+      }
     })
   }
 
