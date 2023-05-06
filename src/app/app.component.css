@@ -11,7 +11,7 @@ header img.smartphone {
   right: 1.8rem;
 }
 
-@media (min-width: 440px) {
+@media (min-width: 672px) {
   .smartphone {
     display: none;
   }
@@ -24,7 +24,7 @@ header img.smartphone {
 
 }
 
-@media (max-width: 439px) {
+@media (max-width: 671px) {
 
   header {
     position: relative;

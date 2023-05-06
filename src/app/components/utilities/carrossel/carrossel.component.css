@@ -1,12 +1,13 @@
-.container {
+.container-carrossel {
   width: 500px;
   height: 300px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 0 10px 0 #c3c3c3;
 }
 
-.container::-webkit-scrollbar {
+.container-carrossel::-webkit-scrollbar {
   display: none;
 }
 
@@ -35,8 +36,12 @@
   border: 0;
 }
 
+.btn-carrossel {
+  transition: background .5s;
+}
+
 .btn-disable {
-  background-color: #fff;
+  background-color: #444;
 }
 
 .btn-active {
@@ -46,16 +51,48 @@
 .caixa {
   width: 500px;
   height: 300px;
+  padding: 2rem 1rem 1rem 2rem;
+  position: relative;
 }
 
-.caixa1 {
-  background-color: aqua;
+.caixa p {
+  font-size: .8rem;
+  width: 60%;
 }
 
-.caixa2 {
-  background-color: rebeccapurple;
+.caixa img {
+  position: absolute;
+  right: 2rem;
+  bottom: 2rem;
+  height: 6rem;
 }
 
-.caixa3 {
-  background-color: brown;
+.caixa h2 {
+  margin-bottom: 1rem;
+  color: var(--pink-Di2win);
+}
+
+@media (max-width: 671px) {
+  .container-carrossel {
+    width: 20rem;
+    height: 300px;
+  }
+
+  .caixa {
+    width: 20rem;
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .caixa p, .caixa h2 {
+    margin: 0 auto 1rem auto;
+  }
+
+  .caixa p {
+    width: 90%;
+  }
+
+  .caixa img {
+    opacity: .2;
+  }
 }
