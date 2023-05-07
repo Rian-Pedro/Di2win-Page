@@ -1,9 +1,15 @@
 .container-carrossel {
-  width: 500px;
+  background-color: #fff;
+  width: 600px;
   height: 300px;
   margin: 0 auto;
   position: relative;
   overflow: hidden;
+  border-bottom: 2px solid var(--pink-Di2win);
+  border-left: 2px solid var(--pink-Di2win);
+  /* border-top: 1px solid var(--pink-Di2win);
+  border-right: 1px solid var(--pink-Di2win); */
+  border-radius: 10px;
   box-shadow: 0 0 10px 0 #c3c3c3;
 }
 
@@ -38,6 +44,8 @@
 
 .btn-carrossel {
   transition: background .5s;
+  cursor: pointer;
+
 }
 
 .btn-disable {
@@ -49,14 +57,14 @@
 }
 
 .caixa {
-  width: 500px;
+  width: 600px;
   height: 300px;
   padding: 2rem 1rem 1rem 2rem;
   position: relative;
 }
 
 .caixa p {
-  font-size: .8rem;
+  font-size: 1rem;
   width: 60%;
 }
 
@@ -64,7 +72,7 @@
   position: absolute;
   right: 2rem;
   bottom: 2rem;
-  height: 6rem;
+  height: 6.5rem;
 }
 
 .caixa h2 {
@@ -89,10 +97,16 @@
   }
 
   .caixa p {
+    font-size: .8rem;
     width: 90%;
   }
 
   .caixa img {
     opacity: .2;
+  }
+
+  button.btn-carrossel {
+    width: 12px;
+    height: 12px;
   }
 }

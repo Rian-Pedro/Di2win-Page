@@ -1,0 +1,17 @@
+div.area-segmentos-solucoes {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5rem;
+}
+
+div.area-segmentos-solucoes h1 span {
+  color: var(--pink-Di2win);
+}
+
+@media (max-width: 671px) {
+  div.area-segmentos-solucoes h1 {
+    font-size: 1.5rem;
+  }
+}

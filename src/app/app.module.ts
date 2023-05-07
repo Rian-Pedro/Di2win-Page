@@ -12,6 +12,8 @@ import { FooterComponent } from './components/footer/footer/footer.component';
 import { NavDesktopComponent } from './components/navbar/nav-desktop/nav-desktop.component';
 import { BtnContatoComponent } from './components/utilities/btn-contato/btn-contato.component';
 import { CarrosselComponent } from './components/utilities/carrossel/carrossel.component';
+import { TestarGratisComponent } from './components/utilities/testar-gratis/testar-gratis.component';
+import { SobreComponent } from './components/sobre/sobre.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { CarrosselComponent } from './components/utilities/carrossel/carrossel.c
     NavDesktopComponent,
     BtnContatoComponent,
     CarrosselComponent,
+    TestarGratisComponent,
+    SobreComponent,
   ],
   imports: [
     BrowserModule,
