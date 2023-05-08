@@ -4,6 +4,13 @@
     --color-neutral-30: #a8a29e;
     --color-neutral-40: #FFFF;
     --pink-Di2win: #FF1D92;
+
+    --branco-principal: #FFFFFF;
+    --cinza-principal: #D9D9D9;
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #0d0030;
+    --color-neutral-30: #a8a29e;
+
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
@@ -23,10 +30,10 @@ main {
 }
 
 .line {
-  border-top: 2px solid var(--pink-Di2win);
+  border-top: 1px solid var(--pink-Di2win);
   width: 80%;
   margin: 0 auto;
-  box-shadow: 0 0 20px 0 var(--pink-Di2win);
+  box-shadow: 0 0 20px .5px var(--pink-Di2win);
 }
 
 .D-flexCollumn {

@@ -20,17 +20,9 @@ img {
   transform: rotateZ(90deg);
 }
 
-div.dropdown {
-  background-color: aqua;
-  position: absolute;
-  width: 50%;
-  transform: translateY(80%);
-}
-
-.close {
-  display: none;
-}
-
-.hidden {
-  display: none;
+@media (min-width: 672px) and (max-width: 1023px) {
+  nav ul {
+    font-size: .8rem;
+    gap: .8rem;
+  }
 }

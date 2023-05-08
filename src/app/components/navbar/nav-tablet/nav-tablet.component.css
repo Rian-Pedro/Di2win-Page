@@ -1,0 +1,15 @@
+ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: .8rem;
+  font-weight: 600;
+}
+
+.login {
+  background-color: var(--pink-Di2win);
+  padding: .5rem .8rem;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px #c2c2c2;
+}

@@ -1,4 +1,5 @@
 <div class="container-carrossel">
+
   <div class="carrossel">
     <div *ngFor="let tela of telas" class="caixa">
       <h2>{{tela.title | uppercase}}</h2>
@@ -6,7 +7,9 @@
       <img [src]="tela.url">
     </div>
   </div>
+
   <div class="container-btn-carrossel">
     <button *ngFor="let btn of telas" (click)="slide(btn, $event)" class="btn-carrossel btn-disable"></button>
-  </div> 
+  </div>
+  
 </div>

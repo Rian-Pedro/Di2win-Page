@@ -58,8 +58,24 @@ h3.titulo span{
   color: #FF1D92;
 }
 
-@media (min-width: 671px) {
+@media (min-width: 1024px) {
+
   div.caixa {
     width: 45%;
+  }
+
+}
+
+@media (min-width: 672px) and (max-width: 1023px) {
+
+  div.caixa {
+    width: 60%;
+  }
+
+}
+
+@media (max-width: 671px) {
+  div.caixa {
+    width: 90%;
   }
 }

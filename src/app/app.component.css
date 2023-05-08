@@ -5,14 +5,23 @@ header {
   z-index: 10;
 }
 
-header img.smartphone {
+header img.dots {
   transform: translateY(25%);
   position: absolute;
   right: 1.8rem;
 }
 
-@media (min-width: 672px) {
+@media (min-width: 1024px) {
+
+  .tablet {
+    display: none;
+  }
+
   .smartphone {
+    display: none;
+  }
+
+  .dots {
     display: none;
   }
 
@@ -24,13 +33,37 @@ header img.smartphone {
 
 }
 
+ul {
+  border: 1px solid red;
+}
+
+@media (min-width: 672px) and (max-width: 1023px) {
+
+  .smartphone {
+    display: none;
+  }
+
+  header {
+    padding: 1.8rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+}
+
 @media (max-width: 671px) {
 
   header {
     position: relative;
   }
 
+  .tablet {
+    display: none;
+  }
+
   .desktop {
     display: none;
   }
+
 }

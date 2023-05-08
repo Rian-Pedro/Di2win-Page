@@ -14,6 +14,8 @@ import { BtnContatoComponent } from './components/utilities/btn-contato/btn-cont
 import { CarrosselComponent } from './components/utilities/carrossel/carrossel.component';
 import { TestarGratisComponent } from './components/utilities/testar-gratis/testar-gratis.component';
 import { SobreComponent } from './components/sobre/sobre.component';
+import { NavTabletComponent } from './components/navbar/nav-tablet/nav-tablet.component';
+import { FeedbackComponent } from './pages/feedback/feedback.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { SobreComponent } from './components/sobre/sobre.component';
     CarrosselComponent,
     TestarGratisComponent,
     SobreComponent,
+    NavTabletComponent,
+    FeedbackComponent,
   ],
   imports: [
     BrowserModule,
