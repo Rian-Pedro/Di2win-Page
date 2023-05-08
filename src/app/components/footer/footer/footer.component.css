@@ -13,6 +13,7 @@ footer {
 }
 
 .logo img {
+  margin-top: 3rem;
   padding-bottom: 2rem;
   width: 100%;
   max-width: 150px;
