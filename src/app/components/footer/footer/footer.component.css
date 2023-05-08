@@ -1,5 +1,4 @@
 footer {
-  margin-top: 5rem;
   text-align: center;
   width: 100%;
   color: var(--color-neutral-40);
@@ -10,13 +9,21 @@ footer {
 }
 
 #footer_content {
-  height: min-content;
   background-color: var(--color-neutral-10);
 }
 
 .logo img {
+  padding-bottom: 2rem;
   width: 100%;
   max-width: 150px;
+}
+
+.line{
+  border-top: 2px solid #ff2992;
+  width: 80%;
+  margin: 0 auto;
+  box-shadow: 0 0 20px 0 #ff2992;
+
 }
 
 #footer_social_media {
@@ -65,8 +72,8 @@ footer {
   background-color: #4267b3;
 }
 
-#whatsapp {
-  background-color: #25d366;
+#linkedin {
+  background-color: #4267b3;
 }
 
 #footer_politica {
@@ -89,11 +96,11 @@ footer {
   #footer_social_media {
     flex-wrap: wrap;
   }
-
+  
   #footer_social_media .social-media-item {
     margin: 0.5rem;
   }
-
+  
   #footer_privacy_policy {
     margin-top: 1rem;
   }
