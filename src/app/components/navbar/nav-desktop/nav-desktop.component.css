@@ -7,6 +7,10 @@ nav ul {
   font-size: .9rem;
 }
 
+ul li {
+  position: relative;
+}
+
 .login {
   background-color: var(--pink-Di2win);
   padding: .5rem .8rem;
@@ -25,4 +29,17 @@ img {
     font-size: .8rem;
     gap: .8rem;
   }
+}
+
+.dropdown-desktop {
+  border: 1px solid red;
+  width: 100%;
+  height: max-content;
+  padding-bottom: 3rem;
+  position: absolute;
+  animation: open-nav .5s;
+}
+
+.close {
+  display: none;
 }
