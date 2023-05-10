@@ -1,0 +1,11 @@
+a {
+    text-decoration: none;
+    background-color: var(--pink-Di2win);
+    padding: .5rem .8rem;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 5px 10px #c2c2c2;
+    border: 0;
+    font-size: .9rem;
+    font-weight: 600;
+}

@@ -16,6 +16,7 @@ import { TestarGratisComponent } from './components/utilities/testar-gratis/test
 import { SobreComponent } from './components/sobre/sobre.component';
 import { NavTabletComponent } from './components/navbar/nav-tablet/nav-tablet.component';
 import { FeedbackComponent } from './pages/feedback/feedback.component';
+import { ButtonComponent } from './components/utilities/button/button.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { FeedbackComponent } from './pages/feedback/feedback.component';
     SobreComponent,
     NavTabletComponent,
     FeedbackComponent,
+    ButtonComponent,
   ],
   imports: [
     BrowserModule,

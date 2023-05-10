@@ -28,16 +28,6 @@
   margin-bottom: 1rem;
 }
 
-.botao-teste{
-  background-color: #FF1D92;
-  padding: 0.3rem 0.8rem;
-  color: #fff;
-  cursor: pointer;
-  border-radius: 5px;
-  font-weight: 600;
-  text-transform: uppercase;
-  box-shadow: 0 5px 10px #c2c2c2;
-}
 
 div.sobre-texto p {
   text-align: center;
