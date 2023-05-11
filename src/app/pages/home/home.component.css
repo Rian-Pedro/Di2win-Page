@@ -20,13 +20,6 @@ div.area-segmentos-solucoes h1 span {
   }
 }
 
-/* @media (min-width: 321px) {
-  section.arqs-exports {
-    padding: 1.5rem;
-    border: 1px solid red;
-  }
-} */
-
 section.arqs-exports {
   display: flex;
   flex-direction: column;
@@ -36,6 +29,10 @@ section.arqs-exports {
 
 section.arqs-exports span {
   color: var(--pink-Di2win);
+}
+
+section.arqs-exports h2 {
+  margin-bottom: 1rem;
 }
 
 section.arqs-exports div {
