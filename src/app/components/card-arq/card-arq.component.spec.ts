@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ArqsExportsComponent } from './arqs-exports.component';
+import { CardArqComponent } from './card-arq.component';
 
-describe('ArqsExportsComponent', () => {
-  let component: ArqsExportsComponent;
-  let fixture: ComponentFixture<ArqsExportsComponent>;
+describe('CardArqComponent', () => {
+  let component: CardArqComponent;
+  let fixture: ComponentFixture<CardArqComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ArqsExportsComponent ]
+      declarations: [ CardArqComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(ArqsExportsComponent);
+    fixture = TestBed.createComponent(CardArqComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

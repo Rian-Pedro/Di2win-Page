@@ -17,7 +17,7 @@ import { SobreComponent } from './components/sobre/sobre.component';
 import { NavTabletComponent } from './components/navbar/nav-tablet/nav-tablet.component';
 import { FeedbackComponent } from './pages/feedback/feedback.component';
 import { ButtonComponent } from './components/utilities/button/button.component';
-import { ArqsExportsComponent } from './components/arqs-exports/arqs-exports.component';
+import { CardArqComponent } from './components/card-arq/card-arq.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +36,7 @@ import { ArqsExportsComponent } from './components/arqs-exports/arqs-exports.com
     NavTabletComponent,
     FeedbackComponent,
     ButtonComponent,
-    ArqsExportsComponent,
+    CardArqComponent,
   ],
   imports: [
     BrowserModule,

@@ -14,4 +14,33 @@ div.area-segmentos-solucoes h1 span {
   div.area-segmentos-solucoes h1 {
     font-size: 1.5rem;
   }
+
+  section.arqs-exports h2 {
+    font-size: 1.1rem;
+  }
+}
+
+/* @media (min-width: 321px) {
+  section.arqs-exports {
+    padding: 1.5rem;
+    border: 1px solid red;
+  }
+} */
+
+section.arqs-exports {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem;
+}
+
+section.arqs-exports span {
+  color: var(--pink-Di2win);
+}
+
+section.arqs-exports div {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
