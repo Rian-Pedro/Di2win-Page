@@ -17,6 +17,7 @@ import { SobreComponent } from './components/sobre/sobre.component';
 import { NavTabletComponent } from './components/navbar/nav-tablet/nav-tablet.component';
 import { FeedbackComponent } from './pages/feedback/feedback.component';
 import { ButtonComponent } from './components/utilities/button/button.component';
+import { ArqsExportsComponent } from './components/arqs-exports/arqs-exports.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { ButtonComponent } from './components/utilities/button/button.component'
     NavTabletComponent,
     FeedbackComponent,
     ButtonComponent,
+    ArqsExportsComponent,
   ],
   imports: [
     BrowserModule,
