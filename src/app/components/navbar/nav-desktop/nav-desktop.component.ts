@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./nav-desktop.component.css']
 })
 export class NavDesktopComponent {
-  showNav(eventTarget: EventTarget) {
+  showNav(eventTarget: Event) {
 
   }
 }
