@@ -1,0 +1,36 @@
+p{
+  text-align: center;
+}
+
+/* #valor-documentos{
+  text-align: ;
+} */
+
+.texto-rosa{
+  color: #FF1D92;
+}
+
+.caixa{
+  display: inline-block;
+  border: solid #FF1D92;
+  border-radius: 10px;
+  border-width: 0px 0px 3px 3px;
+}
+
+.valor{
+  font-size: 200%;
+  font-weight: bold;
+}
+
+.linha{
+  position: center;
+  width: 90%;
+  height: 3px;
+
+  border-radius: 0.5px;
+}
+
+.seta{
+  text-align: center;
+  margin-right: 10px;
+}

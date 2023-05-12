@@ -18,6 +18,8 @@ import { NavTabletComponent } from './components/navbar/nav-tablet/nav-tablet.co
 import { FeedbackComponent } from './pages/feedback/feedback.component';
 import { ButtonComponent } from './components/utilities/button/button.component';
 import { CardArqComponent } from './components/card-arq/card-arq.component';
+import { DadosNumericosComponent } from './components/dados-numericos/dados-numericos.component';
+import { ClientesComponent } from './components/clientes/clientes.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +39,8 @@ import { CardArqComponent } from './components/card-arq/card-arq.component';
     FeedbackComponent,
     ButtonComponent,
     CardArqComponent,
+    DadosNumericosComponent,
+    ClientesComponent,
   ],
   imports: [
     BrowserModule,
