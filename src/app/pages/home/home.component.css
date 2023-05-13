@@ -1,3 +1,7 @@
+main {
+  padding-bottom: 0;
+}
+
 div.area-segmentos-solucoes {
   padding: 1rem;
   display: flex;
@@ -24,7 +28,6 @@ section.arqs-exports {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 1.5rem;
 }
 
 section.arqs-exports span {
@@ -42,6 +45,33 @@ section.arqs-exports div {
   gap: 1.5rem;
 }
 
-section.clientes {
+section {
+  padding: 2rem;
+}
+
+section.auxilio {
+  background-color: #E2E2E2;
+  height: 100vh;
+}
+
+section.auxilio h2 {
+  display: inline-block;
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+section.auxilio h2 span{
+  color: var(--pink-Di2win);
+  position: absolute;
+  right: -2rem;
+  font-weight: bold;
+}
+
+section.auxilio div.area-vantagens {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  gap: 2rem;
   padding: 2rem;
 }

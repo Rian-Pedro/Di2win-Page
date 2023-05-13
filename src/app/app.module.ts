@@ -20,6 +20,7 @@ import { ButtonComponent } from './components/utilities/button/button.component'
 import { CardArqComponent } from './components/card-arq/card-arq.component';
 import { DadosNumericosComponent } from './components/dados-numericos/dados-numericos.component';
 import { ClientesComponent } from './components/clientes/clientes.component';
+import { VantagemComponent } from './components/vantagem/vantagem.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { ClientesComponent } from './components/clientes/clientes.component';
     CardArqComponent,
     DadosNumericosComponent,
     ClientesComponent,
+    VantagemComponent,
   ],
   imports: [
     BrowserModule,

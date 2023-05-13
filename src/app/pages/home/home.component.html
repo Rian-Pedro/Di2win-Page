@@ -58,4 +58,13 @@
 
   <app-btn-contato></app-btn-contato>
 
+  <section class="auxilio">
+    <h2>COMO O EXTRAIDADOS AUXILIA OS <br><span>SERVIÇOS FINANCEIROS</span></h2>
+    <div class="area-vantagens">
+
+      <app-vantagem *ngFor="let advantage of advantageList" [num]="advantage.num" [title]="advantage.title" [text]="advantage.text"></app-vantagem>
+
+    </div>
+  </section>
+
 </main>
