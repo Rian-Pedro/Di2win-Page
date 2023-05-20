@@ -8,6 +8,8 @@ import { Component, Input, Output, EventEmitter } from '@angular/core';
 export class BtnNavComponent {
 
   @Input() title: string = '';
+  @Input() link: string = '';
+  @Input() router: string = '';
 
   @Output() changeOptions: EventEmitter<{name: string}> = new EventEmitter();
 

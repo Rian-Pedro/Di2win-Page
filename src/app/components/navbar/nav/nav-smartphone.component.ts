@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { Menu } from 'src/app/menu';
 
 @Component({
@@ -10,47 +10,48 @@ export class NavComponent {
 
   show: Boolean = true;
 
-  ngOnInit() {
-    let menu: HTMLDivElement = document.querySelector(".dropdown") as HTMLDivElement;
-    document.addEventListener('click', (e) => {
+  listLinks: Array<{ title: string, link: string, router: string }> = [
+    { title: "dúvidas frequentes", link: '', router: '/faq' },
+    { title: "feedback", link: '', router: '/feedback' },
+    { title: "entrar", link: 'https://www.extraidados.com.br/autenticacao/entrar', router: '' }
+  ]
 
-      if(e.target !== menu &&
-        e.target !== document.querySelector(".dots") &&
-        !menu.contains(e.target as HTMLElement)) {
-        this.closeDropDown(menu);
-      }
-    })
+  @Output() event = new EventEmitter();
+
+  emitter() {
+    this.event.emit();
   }
 
   dropDownMenu() {
     let menu: HTMLDivElement = document.querySelector(".dropdown") as HTMLDivElement;
-    if(menu.classList.contains('close') || menu.classList.contains('invisible')) {
+    console.log(menu);
+    if(menu.classList.contains('invisible') || menu.classList.contains('close')) {
       if(menu.classList.contains('close')){
+        console.log('aqui');
         menu.classList.remove('close');
       } else {
         menu.classList.remove('invisible');
       }
       menu.classList.add('visible');
     } else {
-      this.closeDropDown(menu);
+      this.closeDropDown();
     }
   }
 
-  teste(option: any) {
-    let optionsNav: NodeListOf<HTMLElement> = document.querySelectorAll('.option-nav') as NodeListOf<HTMLElement>;
-    for(let opt of Array.from(optionsNav)) {
-      if(opt.classList.contains('visible')) {
-        opt.style.display = 'none';
-      }
-    }
-    let div: HTMLElement = document.querySelector(`.${option.name.replace(/[^a-zA-Z0-9]/g, '')}`) as HTMLElement;
-    div.classList.replace('hidden', 'visible');
-    div.style.display = 'inline';
-  }
+  // teste(option: any) {
+  //   for(let opt of this.menu) {
+  //     if(opt.name == option.name){
+  //       opt.show = true;
+  //       let div: HTMLElement = document.querySelector('.hidden') as HTMLElement;
+  //       div.style.display = 'inline';
+  //     }
+  //   }
+  // }
 
-  closeDropDown(menu: any) {
+  closeDropDown() {
+    let menu: HTMLDivElement = document.querySelector(".dropdown") as HTMLDivElement;
     menu.classList.replace('visible', 'invisible');
-    this.show = true;
+    this.show = !this.show;
   }
 
 }

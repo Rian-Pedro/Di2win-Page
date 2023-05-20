@@ -13,7 +13,7 @@
 
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
 
 * {
   margin: 0;
@@ -29,11 +29,22 @@ main {
   width: 100%;
 }
 
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 .line {
   border-top: 1px solid var(--pink-Di2win);
   width: 80%;
   margin: 0 auto;
   box-shadow: 0 0 20px .5px var(--pink-Di2win);
+}
+
+.D-flexCenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .D-flexCollumn {

@@ -1,3 +1,11 @@
 <div class="container">
-  <p (click)="handleOpt($event)" class="titleOpt">{{title | uppercase}}</p>
+  <p (click)="handleOpt($event)" class="titleOpt" *ngIf="!link && !router ; else navegateLink">{{title | uppercase}}</p>
 </div>
+
+<ng-template #navegateLink>
+  <a [href]="link" class="titleOpt" *ngIf="!router; else routerLink">{{title | uppercase}}</a>
+</ng-template>
+
+<ng-template #routerLink>
+  <a [routerLink]="router" class="titleOpt">{{title | uppercase}}</a>
+</ng-template>

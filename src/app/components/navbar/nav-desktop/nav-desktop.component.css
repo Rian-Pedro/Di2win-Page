@@ -2,13 +2,85 @@ nav ul {
   display: flex;
   width: max-content;
   align-items: center;
-  gap: 2rem;
+  gap: 1.5rem;
   font-weight: 600;
   font-size: .9rem;
 }
 
+ul li .link{
+  background-image: url(../../../../assets/line.png);
+  background-repeat: no-repeat;
+  background-position-y: 120%;
+  background-position-x: -1000px;
+  transition: background-position-x .8s;
+  cursor: pointer;
+}
+
+ul li .link:hover {
+  background-position-x: 0px;
+}
+
+ul li p {
+  font-weight: 600;
+  font-size: .9rem;
+}
+
+div.drop {
+  background-color: #fff;
+  box-shadow: 0 0 10px #c3c3c3;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 150%;
+  position: absolute;
+  top: 150%;
+  transform: scaleY(0);
+  transform-origin: 100% 0%;
+}
+
+div.drop p {
+  word-wrap: break-word;
+  font-size: .7rem;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--pink-Di2win);
+  padding: 1rem;
+  width: 90%;
+  text-align: center;
+}
+
+div.secondDrop {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  width: 80%;
+  margin-bottom: .5rem;
+  padding: .5rem .3rem;
+  border-top: 1px solid var(--pink-Di2win);
+  border-bottom: 1px solid var(--pink-Di2win);
+  border-radius: 5px;
+}
+
+div.secondDrop a {
+  padding: .2rem;
+  border-left: 1px solid var(--pink-Di2win);
+  transition: border .5s;
+}
+
+div.secondDrop a:hover {
+  border-left: 10px solid var(--pink-Di2win);
+}
+
 ul li {
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+ul li img {
+  transition: transform .5s;
 }
 
 .login {
@@ -17,11 +89,6 @@ ul li {
   border-radius: 5px;
   color: #fff;
   box-shadow: 0 5px 10px #c2c2c2;
-}
-
-img {
-  margin-left: 5px;
-  transform: rotateZ(90deg);
 }
 
 @media (min-width: 672px) and (max-width: 1023px) {
@@ -40,6 +107,16 @@ img {
   animation: open-nav .5s;
 }
 
-.close {
+.invisible {
+  animation: close-nav .2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  display: flex;
+}
+
+.visible {
+  display: flex;
+  animation: open-nav .2s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.hidden {
   display: none;
 }

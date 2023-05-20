@@ -7,6 +7,12 @@ import { Menu } from './menu';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  linksMenu: Array<{ title: string, link: string }> = [
+    { title: "dúvidas frequentes", link: "https://google.com" },
+    { title: "entrar", link: "https://www.extraidados.com.br/autenticacao/entrar" }
+  ]
+
   title = 'extrai-dados';
 
   show: Boolean = true;
@@ -18,8 +24,10 @@ export class AppComponent {
 
   dropDownMenu() {
     let menu: HTMLDivElement = document.querySelector(".dropdown") as HTMLDivElement;
+    console.log(menu);
     if(menu.classList.contains('invisible') || menu.classList.contains('close')) {
       if(menu.classList.contains('close')){
+        console.log('aqui');
         menu.classList.remove('close');
       } else {
         menu.classList.remove('invisible');

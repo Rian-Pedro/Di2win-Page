@@ -21,6 +21,8 @@ import { CardArqComponent } from './components/card-arq/card-arq.component';
 import { DadosNumericosComponent } from './components/dados-numericos/dados-numericos.component';
 import { ClientesComponent } from './components/clientes/clientes.component';
 import { VantagemComponent } from './components/vantagem/vantagem.component';
+import { FaqComponent } from './pages/faq/faq.component';
+import { MenuDropDownComponent } from './components/utilities/menu-drop-down/menu-drop-down.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +45,8 @@ import { VantagemComponent } from './components/vantagem/vantagem.component';
     DadosNumericosComponent,
     ClientesComponent,
     VantagemComponent,
+    FaqComponent,
+    MenuDropDownComponent,
   ],
   imports: [
     BrowserModule,
