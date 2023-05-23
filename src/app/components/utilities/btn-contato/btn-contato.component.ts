@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './btn-contato.component.html',
   styleUrls: ['./btn-contato.component.css']
 })
+
 export class BtnContatoComponent {
 
 }
