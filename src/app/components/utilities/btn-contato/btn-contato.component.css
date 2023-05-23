@@ -56,4 +56,27 @@
   background-position: center;
 }
 
+@media (max-width: 447px) {
+  .card {
+    width: 90%;
+    background-size: contain;
+  }
 
+  .card-content h2 {
+    font-size: 1rem;
+    font-weight: 500;
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .card-content button {
+    margin-top: 1rem;
+    padding: 12px 18px;
+  }
+}
+
+@media (max-width: 361px) {
+  .card-content h2 {
+    width: 100%;
+  }
+}
