@@ -1,7 +1,17 @@
-p{
-  font-size: 4vw;
-  font-weight: bold;
-}
+h1#teste{
+  text-align: center;
+  text-transform: uppercase;
+  user-select: none;
+  margin-bottom: 1rem;
+  justify-content: center;
+  font-size: 2rem;
+  width: 75%;
+  margin: 2rem  auto;
+  }
+
+.main {
+  width: 100%;
+  }
 
 .texto-rosa{
   color: rgb(255, 29, 146);
@@ -11,13 +21,30 @@ p{
   border: solid #FF1D92;
   border-radius: 10px;
   border-width: 0px 3px 3px 0px;
-  padding: 15px;
+  padding: 2rem 5rem;
+  width: min-content;
+  margin: 0 auto;
+
+}
+
+/* #box img{
+width: 75px;
+border: 1px solid black;
+} */
+
+#secundarios, #principais{
+width: 70%;
+display: flex;  
+justify-content: center;
+gap: 2rem;
+margin: 0 auto;
 }
 
 #secundarios>img{
-  width: 20%;
+  width: 100px;
+  margin-bottom: 2rem;
 }
 
 #principais>img{
-  width: 30%;
+  width: 100px;
 }
