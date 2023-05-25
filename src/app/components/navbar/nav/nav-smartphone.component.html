@@ -1,72 +1,9 @@
-<!-- <nav class="dropdown close" (mouseleave)="closeDropDown($event.target)">
-
-  <section class="esquerda">
-
-    <app-btn-nav
-      title="soluções"
-      class="title-nav"
-      (changeOptions)="teste($event)">
-    </app-btn-nav>
-
-    <app-btn-nav
-      title="produtos"
-      class="title-nav"
-      (changeOptions)="teste($event)">
-    </app-btn-nav>
-
-    <app-btn-nav
-      *ngFor="let link of linkList"
-      class="title-nav"
-      [title]="link.title"
-      [link]="link.link">
-    </app-btn-nav>
-
-    <app-btn-nav
-      title="dúvidas frequentes"
-      class="title-nav">
-    </app-btn-nav>
-
-    <app-btn-nav
-      title="entrar"
-      class="title-nav">
-    </app-btn-nav>
-
-  </section>
-
-  <section class="direita">
-
-    <div class="hidden option-nav solues">
-
-      <app-option-nav
-        title="financeiro"
-        name="finan"
-        [options]="[
-          { name: 'CRI', href: '/' },
-          { name: 'FIDC', href: '/fidc' },
-          { name: 'FINTECH', href: '/' },
-          { name: 'FACTORING', href: '/' }]"
-      ></app-option-nav>
-
-    </div>
-
-    <div class="hidden option-nav produtos">
-
-      <app-option-nav
-        title="extrai dados"
-        name="extrai"
-      ></app-option-nav>
-
-    </div>
-
-  </section>
-
-</nav> -->
 <nav>
   <ul>
     <li>
       <img src="../assets/dots.svg" alt="menu" (click)="dropDownMenu()" class="smartphone dots">
     </li>
   </ul>
-
+ 
   <app-menu-drop-down [linkList]="listLinks"></app-menu-drop-down>
 </nav>

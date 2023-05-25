@@ -51,15 +51,14 @@ section {
 
 section.auxilio {
   background-color: #E2E2E2;
-  height: 100vh;
 }
 
 section.auxilio h2 {
   display: inline-block;
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 5rem;
 }
-
+ 
 section.auxilio h2 span{
   color: var(--pink-Di2win);
   position: absolute;
@@ -70,8 +69,41 @@ section.auxilio h2 span{
 section.auxilio div.area-vantagens {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   width: 100%;
   gap: 2rem;
-  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 690px) {
+
+  section.auxilio {
+    padding: 1.5rem;
+  }
+
+  section.auxilio h2 {
+    display: inline-block;
+    position: relative;
+    margin-bottom: 2rem;
+    font-size: .9rem;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+    text-align: start;
+    width: 100%;
+  }
+
+  section.auxilio h2 span{
+    color: var(--pink-Di2win);
+    position: inherit;
+    font-size: 1.2rem;
+    right: -2rem;
+    font-weight: bold;
+  }
+
+  section.auxilio div.area-vantagens {
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: nowrap;
+    font-weight: normal;
+  }
 }

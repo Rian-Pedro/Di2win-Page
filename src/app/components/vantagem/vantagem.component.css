@@ -11,3 +11,23 @@ div h3 span {
   font-size: 2rem;
   font-weight: bold;
 }
+
+/* div h3 span::after {
+  content: '';
+	display: block;
+	background: #84E;
+	width: 10%;
+	height: 2px;
+	border-radius: 4px;
+} */
+
+div p {
+  font-weight: normal;
+  text-align: start;
+}
+
+@media (max-width: 690px) {
+  div {
+    width: 100%;
+  }
+}

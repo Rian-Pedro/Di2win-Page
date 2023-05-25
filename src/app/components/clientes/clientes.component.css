@@ -7,11 +7,11 @@ h1#teste{
   font-size: 2rem;
   width: 75%;
   margin: 2rem  auto;
-  }
+}
 
 .main {
   width: 100%;
-  }
+}
 
 .texto-rosa{
   color: rgb(255, 29, 146);
@@ -24,7 +24,6 @@ h1#teste{
   padding: 2rem 5rem;
   width: min-content;
   margin: 0 auto;
-
 }
 
 /* #box img{
@@ -34,7 +33,7 @@ border: 1px solid black;
 
 #secundarios, #principais{
 width: 70%;
-display: flex;  
+display: flex;
 justify-content: center;
 gap: 2rem;
 margin: 0 auto;
@@ -47,4 +46,20 @@ margin: 0 auto;
 
 #principais>img{
   width: 100px;
+}
+
+@media (max-width: 690px) {
+
+  h1#teste {
+    font-size: 1rem;
+  }
+
+  #box {
+    width: 100%;
+  }
+
+  #secundarios>img, #principais>img {
+    width: 60%;
+  }
+
 }

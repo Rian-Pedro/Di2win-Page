@@ -9,11 +9,7 @@ header {
   position: relative;
 }
 
-@media (min-width: 1024px) {
-
-  .tablet {
-    display: none;
-  }
+@media (min-width: 1023px) {
 
    .smartphone {
     display: none;
