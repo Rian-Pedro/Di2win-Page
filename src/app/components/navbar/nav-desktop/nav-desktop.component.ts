@@ -46,7 +46,11 @@ export class NavDesktopComponent {
       });
 
       img.style.transform = "rotate(90deg)"
-      menu.classList.replace('invisible', 'visible');
+      if(menu.classList.contains('hidden')){
+        menu.classList.replace('hidden', 'visible');
+      } else {
+        menu.classList.replace('invisible', 'visible');
+      }
 
     } else {
 

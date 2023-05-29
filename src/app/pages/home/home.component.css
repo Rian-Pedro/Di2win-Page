@@ -50,7 +50,8 @@ section {
 }
 
 section.auxilio {
-  background-color: #E2E2E2;
+  background-image: url(../../../assets/fundo2.svg);
+  background-size: cover;
 }
 
 section.auxilio h2 {
@@ -58,7 +59,7 @@ section.auxilio h2 {
   position: relative;
   margin-bottom: 5rem;
 }
- 
+
 section.auxilio h2 span{
   color: var(--pink-Di2win);
   position: absolute;
@@ -79,6 +80,7 @@ section.auxilio div.area-vantagens {
 
   section.auxilio {
     padding: 1.5rem;
+    background-attachment: fixed;
   }
 
   section.auxilio h2 {

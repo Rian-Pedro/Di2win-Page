@@ -3,7 +3,7 @@
   <ul>
     <li>
       <p (click)="openMenu($event.target)" class="link">SOLUÇÕES</p> <img src="../../../../assets/arrow.svg" alt="">
-      <div class="drop invisible" (mouseleave)="closeMenu($event.target)">
+      <div class="drop hidden" (mouseleave)="closeMenu($event.target)">
         <p (click)="showOptions($event.target)">FINANCEIRO</p>
         <div class="secondDrop" style="display: none;">
           <a href="">CRI</a>
@@ -17,7 +17,7 @@
     </li>
     <li>
       <p (click)="openMenu($event.target)" class="link">PRODUTOS</p> <img src="../../../../assets/arrow.svg" alt="">
-      <div class="drop invisible" (mouseleave)="closeMenu($event.target)">
+      <div class="drop hidden" (mouseleave)="closeMenu($event.target)">
         <p class="noPointer">EXTRAI DADOS</p>
         <div class="line"></div>
         <p class="noPointer">TESTE</p>
