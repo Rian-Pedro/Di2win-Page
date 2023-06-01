@@ -15,8 +15,10 @@ O site não apresentava informações claras sobre o produto extrAIdados, o que 
 A aplicação conta com responsividade entre as diferentes tipo de tela, possui uma navegação fluida entre as páginas, através de um menu disposto ao topo da tela:
 
 desktop:
+<br>
 ![](./imgREADME/desktop.png)
 mobile: 
+<br>
 ![](./imgREADME/mobile.png)
 
 
