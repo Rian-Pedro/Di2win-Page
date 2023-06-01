@@ -1,9 +1,12 @@
 div.container {
   width: 100%;
   border-bottom: 1px solid #FF1D92;
-  font-size: .8rem;
   font-weight: 300;
   text-align: center;
+}
+
+div.container p, div.container a {
+  font-size: .8rem;
 }
 
 div.container .titleOpt {

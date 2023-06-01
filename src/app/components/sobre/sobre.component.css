@@ -19,8 +19,8 @@ div.container-sobre{
 
 div.container-sobre div.content-sobre p{
   font-family: 'Montserrat';
-  font-size: 16px;
-  font-weight: 300;
+  font-size: .9rem;
+  font-weight: normal;
   letter-spacing: 0em;
   justify-content: center;
   width: 80%;
