@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Menu } from './menu';
 
 @Component({
   selector: 'app-root',
@@ -17,7 +16,7 @@ export class AppComponent {
 
   show: Boolean = true;
 
-  menu: Array<Menu> = [
+  menu: Array<{ name: string, show: Boolean }> = [
     { name: 'soluções', show: false },
     { name: 'produtos', show: false }
   ];

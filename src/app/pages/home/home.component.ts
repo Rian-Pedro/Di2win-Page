@@ -7,6 +7,28 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  arrayCarrossel: Array<{ title: string, url: string, text: string }> = [
+      { title: 'financeiro',
+        url: '../../../../assets/soluções/financeiro.svg',
+        text: 'A tecnologia de ponta da extrAIdados agiliza a coleta de dados, reduzindo erros e melhorando a eficiência operacional. Com essa ferramenta, empresas podem tomar decisões mais embasadas, maximizar receitas e minimizar riscos.'
+      },
+
+      { title: 'imobiliário',
+        url: '../../../../assets/soluções/imobiliario.svg',
+        text: 'A ferramenta simplifica automatizando a extração de registros de propriedades, contratos e transações. Isso permite aos profissionais otimizar processos, eliminando tarefas administrativas repetitivas.'
+      },
+
+      { title: 'educação',
+        url: '../../../../assets/soluções/educacao.svg',
+        text: 'A ferramenta extrAIdados simplifica a gestão administrativa das instituições educacionais, automatizando processos como matrículas, registros de alunos e fluxo de documentos. Isso permite que as equipes se concentrem no ensino e na melhoria da experiência dos alunos.'
+      },
+
+      { title: 'seguros',
+        url: '../../../../assets/soluções/seguros.svg',
+        text: 'A extrAIdados oferece automação na coleta de dados. Com a ferramenta as companhias de seguros podem agilizar o processamento de sinistros, avaliar riscos com maior precisão e fornecer um serviço mais eficiente aos segurados.'
+      }
+  ]
+
   advantageList: Array<{num: String, title: String, text: String}> = [
     {num: '01',
      title: 'RECEBÍVEIS',

@@ -1,5 +1,4 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { Menu } from 'src/app/menu';
 
 @Component({
   selector: 'app-nav-smartphone',

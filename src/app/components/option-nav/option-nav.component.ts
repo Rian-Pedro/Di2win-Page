@@ -1,5 +1,4 @@
 import { Component, Input } from '@angular/core';
-import { option } from 'src/app/option';
 
 @Component({
   selector: 'app-option-nav',
@@ -11,7 +10,7 @@ export class OptionNavComponent {
 
   @Input() name: string = '';
   @Input() title: string = '';
-  @Input() options: Array<option> = [];
+  @Input() options: Array<{ name: string, href: string }> = [];
 
   ngOnInit() {
   }
