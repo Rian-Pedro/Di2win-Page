@@ -1,9 +1,9 @@
 main {
-  gap: 5rem
+  padding-top: 2rem;
 }
 
 main div.msg {
-  width: 90%;
+  width: 95%;
   padding: 1rem;
   margin: 0 auto;
   display: flex;
@@ -13,26 +13,188 @@ main div.msg {
 }
 
 main div.msg div.msgContent h2 {
-  font-size: 1.5rem;
   color: var(--pink-Di2win);
   margin-bottom: 1rem;
 }
 
-main div.msg img {
-  width: 100%;
+.msgContent p {
+  /* font-size: 12px; */
+  font-weight: normal;
+  text-align: start;
 }
 
-@media (min-width: 672px) {
+div.msgContent img {
+  margin-top: 2rem;
+}
+
+main div.msg img {
+  width: 100%;
+  margin-top: 2rem;
+}
+
+div.cardMsg {
+  width: 90%;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
+  border-left: 2px solid var(--pink-Di2win);
+  border-bottom: 2px solid var(--pink-Di2win);
+  border-radius: 5px;
+  box-shadow: -5px 5px 10px rgb(255, 29, 146, 25%);
+  text-align: center;
+  /* font-size: 12px; */
+}
+
+.cardMsg p span {
+  color: var(--pink-Di2win);
+  font-weight: bold;
+}
+
+div.securityPolicy {
+  width: 90%;
+  margin: 0 auto;
+  /* font-size: 12px; */
+}
+
+div.securityPolicy p span {
+  font-weight: bold;
+  color: var(--pink-Di2win);
+}
+
+div.securityPolicy ul {
+  margin: 2rem 1rem;
+}
+
+div.vantagens {
+  width: 90%;
+  margin: 0 auto;
+}
+
+div.vantagens h3 {
+  color: var(--pink-Di2win);
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+div.solutions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+div.solutions h3 {
+  align-self: flex-start;
+  margin-left: 1rem;
+  font-weight: bold;
+  color: var(--pink-Di2win);
+  margin-bottom: 2rem;
+}
+
+div.solutions div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+  width: 85%;
+}
+
+div.solutions div h4 {
+  display: inline-block;
+  width: max-content;
+  display: flex;
+  flex-direction: column;
+}
+
+div.solutions h4::after {
+  content: '';
+  height: 2px;
+  background-color: var(--pink-Di2win);
+  box-shadow: 0 0 10px var(--pink-Di2win);
+  margin-top: 3px;
+}
+
+div.solutions div p {
+  /* font-size: 12px; */
+}
+
+
+@media (min-width: 1280px) {
+
+  p {
+    font-size: .9rem;
+  }
+
   main div.msg {
-    width: 60%;
+    width: 90%;
     gap: 2rem;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   main div.msg div.msgContent {
-    width: 80%;
+    width: 40%;
   }
 
   main div.msg img {
-    width: 80%;
+    width: 40%;
+  }
+
+  div.cardMsg {
+    width: 40%;
+    padding: 2rem 1rem;
+  }
+
+  div.securityPolicy, div.vantagens {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  div.vantagens h3 {
+    align-self: flex-start;
+    margin-left: -2rem;
+  }
+
+  div.solutions {
+    margin: 0 auto;
+  }
+
+  div.solutions h3 {
+    margin-left: 5rem;
+  }
+
+  div.solutions div.containerSolutions {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+    gap: 2rem;
+  }
+
+  div.containerSolutions div {
+    width: 45%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 1279px) {
+  main div.msg {
+    width: 90%;
+    gap: 1rem;
+  }
+
+  main div.msg div.msgContent {
+    width: 60%;
+  }
+
+  main div.msg img {
+    width: 50%;
+  }
+
+  div.cardMsg {
+    width: 60%;
+    padding: 2rem 1rem;
   }
 }

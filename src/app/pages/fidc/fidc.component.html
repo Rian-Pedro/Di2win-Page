@@ -3,11 +3,56 @@
   <div class="msg">
     <div class="msgContent">
       <h2>FIDC</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ad vitae laudantium facere voluptates in qui minima a quas, explicabo, eaque voluptate dolor distinctio, magni accusamus aut ipsam cupiditate ut nisi.</p>
+      <p>A ferramenta extrAIdados é uma tecnologia de ponta que vai acelerar com segurança o processo de coleta e análise de dados, facilitando a gestão dos recebíveis. Essa ferramenta de IA garante uma automação na gestão dos Fundos de Investimentos em Direitos Creditórios, proporcionando uma análise de dados com menor índice de erros, otimização dos fluxos de trabalho sem falhas, com um custo menor e aumentando a eficiência nas operações internas.</p>
     </div>
-    <img src="../../../assets/teste.jpeg">
+    <img src="../../../assets/fidc/fundo.svg">
   </div>
 
+  <div class="cardMsg">
+    <p>A <span>extrAIdados</span> pode processar operações em lotes, mantendo fluxos de trabalho <span>10x</span> mais rápidos, aumentando em <span>90%</span> a produtividade e diminuindo em <span>80%</span> o esforço manual. A automatização do tratamento dos dados torna o negócio mais seguro, rápido e ágil.</p>
+  </div>
+
+  <div class="securityPolicy">
+    <p>Em conformidade com a <span>LGPD</span> e nossa política de segurança da informação, utilizamos protocolos de segurança no processamento dos dados e informações que recebemos dos nossos usuários:</p>
+
+    <ul class="list">
+      <li>RESTRIÇÃO DE ACESSO</li>
+      <li>PPRIVACIDADE</li>
+      <li>IMPLANTAÇÃO DE CERTIFICADO SSL E CRIPTOGRAFIA</li>
+      <li>CONFIDENCIALIDADE</li>
+      <li>INTEGRIDADE DE PROCESSAMENTO</li>
+      <li>DISPONIBILIDADE DA INFORMAÇÃO APENAS A PESSOAS AUTORIZADAS</li>
+    </ul>
+  </div>
+
+  <div class="line"></div>
+
+  <div class="vantagens">
+    <h3>VANTAGENS:</h3>
+
+    <ul class="list">
+      <li>API DE INTEGRAÇÃO COM SEU SISTEMA</li>
+      <li>PROCESSAMENTO EM LOTE</li>
+      <li>EXTRAÇÃO DE DADOS DE DOCUMENTOS ESTRUTURADOS, SEMI-ESTRUTURADOS, NÃO ESTRUTURADOS, PDF OU IMAGENS</li>
+      <li>FLUXOS DE TRABALHO 10X MAIS RÁPIDOS</li>
+      <li>IDENTIFICAR E CLASSIFICAR O TIPO DE DOCUMENTO</li>
+      <li>DISPONIBILIDADE DOS DADOS EXTRAÍDOS CONFORME NECESSIDADE</li>
+      <li>FÁCIL UTILIZAÇÃO COM ADOÇÃO DE LOW-CODE, NO FORMATO SEGURA/ARRASTA</li>
+    </ul>
+  </div>
+
+  <div class="solutions">
+
+    <h3>SOLUÇÕES:</h3>
+
+    <div class="containerSolutions">
+      <div *ngFor="let solution of listSolutions">
+        <h4>{{solution.title | uppercase}}</h4>
+        <p>{{solution.content}}</p>
+      </div>
+    </div>
+
+  </div>
 
   <app-btn-contato></app-btn-contato>
 

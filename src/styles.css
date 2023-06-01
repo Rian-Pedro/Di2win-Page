@@ -21,6 +21,9 @@
   outline: 0;
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
+}
+
+ul {
   list-style: none;
 }
 
@@ -55,11 +58,30 @@ a {
 }
 
 p {
-  font-weight: 300;
+  font-weight: normal;
+  font-size: 12px;
 }
 
 h1, h2, h3 {
   font-weight: 600;
+}
+
+ul.list li {
+  font-size: 1rem;
+  margin: 1rem 0;
+  font-weight: bold;
+}
+
+ul.list li::before {
+  content: '';
+  background-image: url(./assets/arrow.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  position: relative;
+  top: 3px;
 }
 
 ::-webkit-scrollbar {
