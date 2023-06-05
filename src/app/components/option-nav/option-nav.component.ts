@@ -5,15 +5,12 @@ import { Component, Input } from '@angular/core';
   templateUrl: './option-nav.component.html',
   styleUrls: ['./option-nav.component.css']
 })
+
 export class OptionNavComponent {
-  show: Boolean = true;
 
   @Input() name: string = '';
   @Input() title: string = '';
   @Input() options: Array<{ name: string, href: string }> = [];
-
-  ngOnInit() {
-  }
 
   openNav() {
     let option: HTMLDivElement = document.querySelector(`.${this.name}`) as HTMLDivElement;
@@ -46,7 +43,6 @@ export class OptionNavComponent {
       this.closeNav(option, arrow);
     }
 
-    // this.show = !this.show;
   }
 
   closeNav(option: Element, arrow: HTMLElement) {

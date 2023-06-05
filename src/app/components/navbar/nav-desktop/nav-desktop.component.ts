@@ -66,7 +66,7 @@ export class NavDesktopComponent {
     menu.classList.replace('visible', 'invisible');
     img.style.transform = 'rotate(0deg)'
   }
-
+ 
   showOptions(event: any) {
     let el: HTMLElement = event.nextElementSibling;
 

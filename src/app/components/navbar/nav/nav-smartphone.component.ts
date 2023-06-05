@@ -1,4 +1,4 @@
-import { Component, Input, Output, EventEmitter } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-nav-smartphone',
@@ -15,12 +15,6 @@ export class NavComponent {
     { title: "entrar", link: 'https://www.extraidados.com.br/autenticacao/entrar', router: '' }
   ]
 
-  @Output() event = new EventEmitter();
-
-  emitter() {
-    this.event.emit();
-  }
-
   dropDownMenu() {
     let menu: HTMLDivElement = document.querySelector(".dropdown") as HTMLDivElement;
     console.log(menu);
@@ -36,16 +30,6 @@ export class NavComponent {
       this.closeDropDown();
     }
   }
-
-  // teste(option: any) {
-  //   for(let opt of this.menu) {
-  //     if(opt.name == option.name){
-  //       opt.show = true;
-  //       let div: HTMLElement = document.querySelector('.hidden') as HTMLElement;
-  //       div.style.display = 'inline';
-  //     }
-  //   }
-  // }
 
   closeDropDown() {
     let menu: HTMLDivElement = document.querySelector(".dropdown") as HTMLDivElement;

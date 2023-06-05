@@ -7,8 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class MenuDropDownComponent {
 
-  show: Boolean = true;
-
   @Input() linkList: Array<{ title: string, link: string, router: string }> = [];
 
   ngOnInit() {
@@ -23,21 +21,7 @@ export class MenuDropDownComponent {
     })
   }
 
-  dropDownMenu() {
-    let menu: HTMLDivElement = document.querySelector(".dropdown") as HTMLDivElement;
-    if(menu.classList.contains('close') || menu.classList.contains('invisible')) {
-      if(menu.classList.contains('close')){
-        menu.classList.remove('close');
-      } else {
-        menu.classList.remove('invisible');
-      }
-      menu.classList.add('visible');
-    } else {
-      this.closeDropDown(menu);
-    }
-  }
-
-  teste(option: any) {
+  option(option: any) {
     let optionsNav: NodeListOf<HTMLElement> = document.querySelectorAll('.option-nav') as NodeListOf<HTMLElement>;
     for(let opt of Array.from(optionsNav)) {
       if(opt.classList.contains('visible')) {
@@ -52,7 +36,6 @@ export class MenuDropDownComponent {
 
   closeDropDown(menu: any) {
     menu.classList.replace('visible', 'invisible');
-    this.show = true;
   }
 
 }

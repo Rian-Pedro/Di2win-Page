@@ -1,36 +1,21 @@
 <main>
-  <section id="principal"> 
+  <section id="principal">
 
     <h1><span>DÚVIDAS</span> FREQUENTES</h1>
 
     <div class="questions">
 
-      <div class="question-box">
+      <div class="question-box" *ngFor="let question of questions">
 
-        <p (click)="teste($event.target)" class="title"> <img src="../../../assets/arrow.svg" alt=""> PERGUNTA 1</p>
+        <p (click)="openResponse($event.target)" class="title"> <img src="../../../assets/arrow.svg" alt=""> {{ question.title }}</p>
         <div class="response invisible">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam tempora animi alias reiciendis, esse minus magnam consectetur, pariatur ipsum modi odio repellat eligendi nemo blanditiis. Adipisci delectus ab magni eum.
+            {{ question.content }}
           </p>
         </div>
 
       </div>
-      <div class="question-box">
 
-        <p (click)="teste($event.target)" class="title"> <img src="../../../assets/arrow.svg" alt=""> PERGUNTA 2</p>
-        <div class="response invisible">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam tempora animi alias reiciendis, esse minus magnam consectetur, pariatur ipsum modi odio repellat eligendi nemo blanditiis. Adipisci delectus ab magni eum.</p>
-        </div>
-
-      </div>
-      <div class="question-box">
-
-        <p (click)="teste($event.target)" class="title"> <img src="../../../assets/arrow.svg" alt=""> PERGUNTA 3</p>
-        <div class="response invisible">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam tempora animi alias reiciendis, esse minus magnam consectetur, pariatur ipsum modi odio repellat eligendi nemo blanditiis. Adipisci delectus ab magni eum.</p>
-        </div>
-
-      </div>
     </div>
   </section>
 </main>
