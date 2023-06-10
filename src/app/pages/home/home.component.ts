@@ -25,7 +25,7 @@ export class HomeComponent {
 
       { title: 'seguros',
         url: '../../../../assets/soluções/seguros.svg',
-        text: 'A extrAIdados oferece automação na coleta de dados. Com a ferramenta as companhias de seguros podem agilizar o processamento de sinistros, avaliar riscos com maior precisão e fornecer um serviço mais eficiente aos segurados.'
+        text: 'O extrAIdados oferece automação na coleta de dados. Com a ferramenta as companhias de seguros podem agilizar o processamento de sinistros, avaliar riscos com maior precisão e fornecer um serviço mais eficiente aos segurados.'
       }
   ]
 
