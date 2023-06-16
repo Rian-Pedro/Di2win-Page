@@ -27,11 +27,13 @@ div.container-sobre div.content-sobre p{
   user-select: none;
 }
 
-div.container-sobre .foto{
-  width: 90%;
+@media (min-width: 600px) and (max-width: 1020px) {
+  div.container-sobre img.foto {
+    width: 60% !important;
+  }
 }
 
-@media (max-width: 671px) {
+@media (max-width: 1020px) {
 
   h1.titulo {
     font-size: 1.5rem;
